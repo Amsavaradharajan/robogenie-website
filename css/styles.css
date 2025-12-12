@@ -53,7 +53,7 @@ body {
 }
 
 .nav-logo-img {
-    height: 40px;
+    height: 64px;
     width: auto;
 }
 
@@ -207,9 +207,15 @@ section {
     line-height: 1.8;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero-cta {
     display: inline-block;
-    margin-left: 1rem;
     padding: 0.75rem 1.5rem;
     background: transparent;
     color: #2c5f8d;
@@ -626,6 +632,81 @@ section {
     color: #1a3a5a;
 }
 
+/* QR Code Section */
+.qr-code-section {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.qr-code {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 0.5rem;
+    background: #ffffff;
+}
+
+.qr-code-label {
+    font-size: 0.9rem;
+    color: #6a6a6a;
+    margin: 0;
+}
+
+/* Founder Section */
+.founder-section {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.founder-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.founder-photo img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.founder-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.founder-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.founder-role {
+    font-size: 0.95rem;
+    color: #6a6a6a;
+    font-weight: 400;
+    margin: 0;
+}
+
+.founder-text p {
+    margin: 0;
+    line-height: 1.7;
+    color: #1a1a1a;
+}
+
 /* ===== Footer ===== */
 .footer {
     background-color: #fafafa;
@@ -659,7 +740,7 @@ section {
     }
     
     .nav-logo-img {
-        height: 32px;
+        height: 52px;
     }
     
     .nav-links {
@@ -698,6 +779,19 @@ section {
 
     .hero-text-panel {
         padding: 2rem 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .cta-button,
+    .hero-cta {
+        width: 100%;
+        text-align: center;
+        margin: 0;
     }
 
     .hero-overlay {
@@ -741,6 +835,26 @@ section {
         font-size: 1.2rem;
     }
 
+    .founder-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .founder-photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .founder-photo img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .founder-text {
+        text-align: center;
+    }
+
     .lightbox {
         padding: 20px;
     }
@@ -771,9 +885,18 @@ section {
         padding: 1.75rem 1.25rem;
     }
 
+    .hero-buttons {
+        gap: 0.625rem;
+    }
+
     .cta-button {
-        padding: 0.875rem 2rem;
+        padding: 0.875rem 1.5rem;
         font-size: 1rem;
+    }
+
+    .hero-cta {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
     }
 
     .gallery-item img {
